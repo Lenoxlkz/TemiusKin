@@ -10,6 +10,21 @@ Instálalo desde Plugins ▸ Agregar con:
 Lenoxlkz/TemiusKin
 ```
 
+## Superficies pintadas: bordes, focos y reacciones (v1.5)
+
+`surfaces` (apiVersion 26) ya no es solo telón de fondo: ahora pinta **cada
+elemento** de Kino en las tres familias:
+
+- **Glass**: tarjetas con stroke al acento y glow suave **en reposo**, botón
+  principal con degradado **derivado del acento por `gloss 1.0`** (se recolorea
+  en vivo con los swatches), stroke-reflejo y glow en cada botón, riel flotante
+  con degradado, progreso en degradado y anillos de foco 2.5 con glow.
+- **AMOLED**: píldora activa y botón primario en acento puro, fuentes de foco
+  blancas con glow tenue (luz solo sobre píxeles encendidos), progreso con
+  degradado al acento profundo, reposo negro con contorno hairline `#1F1F1F`.
+- **Material You**: anillos de foco y de tarjeta al acento tonal, estilo M3
+  plano; sin resplandores falsos (el material es material, no neón).
+
 ## Fieles a su concepto, a máxima potencia (v1.4)
 
 ### AMOLED Puro — píxeles apagados
@@ -45,7 +60,8 @@ título 1.08×, play circular 1.22×, drift del héroe y crossfade 280 ms.
 ## Notas técnicas
 
 - Los temas son puros datos del manifiesto (`appThemes`): sin código, sin red, sin permisos.
-- Assets: 1 fuente + 4 wallpapers (~1.4 MB en total, 5 de 16 archivos, tope 6 MB).
+- Assets: 1 fuente + 4 wallpapers (~1.4 MB en total, 5 de 16 archivos, tope 6 MB),
+  en rutas cortas del repo (`f/sg.ttf`, `w/*.png`) por el techo de 16 KB del manifiesto.
   Kino los descarga en la instalación desde este repositorio y verifica sha256 y bytes;
   si un asset falla, se usa el color/fuente de Kino y nada se rompe.
 - Todo tema se ve bien con los siete efectos apagados: los efectos solo suman.
