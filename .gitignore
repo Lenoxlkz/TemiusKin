@@ -1,0 +1,8 @@
+# Escritas por node sdk/run.mjs y node sdk/seal.mjs mientras se prueba en local.
+.kino-cookies.json
+.kino-storage.json
+.kino-secrets.json
+.kino-shared.json
+kino-author-key.pem
+*.pem
+node_modules/
